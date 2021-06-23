@@ -1,0 +1,58 @@
+---
+title: "GSE Statistical Methods Lecture"
+author: "Steven Herrera Tenorio"
+date: "6/23/2021"
+output: html_document
+---
+
+^ This is area above is called the YAML header. It defines important information for the document you are working on--in this case, this document is called an RMD (or R Markdown) file. Notice the output is an html document, which is what we will use for today. You can also output PDF files, or even Word documents!
+
+
+
+Generally, this area is used for text. To make headlines, use a hashtag. The more hashtags, the smaller the headline size.
+
+# Title
+
+## Header 1
+
+### Header 2
+
+
+
+
+
+
+
+Below, the area highlighted in gray is called an R-chunk. This is where the R language code is read. Some simple (and complex) math equations can be conducted. 
+
+```{r statistic-examples}
+# First example
+1 + 1
+
+
+# Second example
+9 * 6
+
+
+# Third example (linear algebra)
+matrix(c(2,3,4,7), ncol = 2, nrow = 2)
+## comment: anytime we use parantheses following a word or letter, it is now a "function" that can apply equations. 'matrix()', for example, creates a matrix and it uses three "parameters" that are required in order for the function to work correctly. The first parameter defines the values that go in the matrix, hence the values 2, 3, 4, and 7. Notice that there is an unusual function called 'c()', but this stands for concatenate. If you are not familiar with this math term, this is synonymous with "joining" or "combining" but not necessarily applying an equation to it. The second parameter defines the number of columns used, so for a 2 by 2 matrix we will need 2 columns. The third parameter defines the number of rows. 
+
+
+# Fourth example (linear algebra part 2)
+matrix(c(2,3,4,7), ncol = 2, nrow = 2) %*% matrix(c(3,4,5,8), ncol = 2, nrow = 2)
+```
+
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
